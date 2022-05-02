@@ -101,7 +101,7 @@ if(!isset($_SESSION['login_customer'])){
                     <i class="fa fa-bars"></i>
                     </button>
                 <a class="navbar-brand page-scroll" href="index.php">
-                   kotse </a>
+                   WHEELS FOR A WHILE </a>
             </div>
  
             
@@ -169,7 +169,7 @@ if(!isset($_SESSION['login_customer'])){
                     <i class="fa fa-bars"></i>
                     </button>
                 <a class="navbar-brand page-scroll" href="index.php">
-                   kotse </a>
+                   WHEELS FOR A WHILE </a>
             </div>
           
             <?php include 'alllogins.php';?>

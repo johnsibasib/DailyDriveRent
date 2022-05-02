@@ -1,7 +1,7 @@
 <html>
 
 <head>
-        <title> kotse </title>
+        <title> WHEELS FOR A WHILE </title>
         <link rel="shortcut icon" type="image/png" href="assets/img/P.png.png">
    
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -20,7 +20,7 @@
                     <i class="fa fa-bars"></i>
                     </button>
                 <a class="navbar-brand page-scroll" href="index.php">
-                   kotse </a>
+                   WHEELS FOR A WHILE </a>
             </div>
             
             <?php include 'alllogins.php'; ?>

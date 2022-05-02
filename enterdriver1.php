@@ -3,7 +3,7 @@
 <html>
 
   <head>
-    <title> kotse </title>
+    <title> WHEELS FOR A WHILE </title>
   </head>
   <?php session_start(); ?>
   <link rel="shortcut icon" type="image/png" href="assets/img/P.png.png">
@@ -25,7 +25,7 @@
                     <i class="fa fa-bars"></i>
                     </button>
                 <a class="navbar-brand page-scroll" href="index.php">
-                   kotse </a>
+                   WHEELS FOR A WHILE </a>
             </div>
            
             <?php include 'alllogins.php';?>

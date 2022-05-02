@@ -10,7 +10,7 @@ if(isset($_SESSION['login_client'])){
     <html>
 
     <head>
-        <title> kotse </title>
+        <title> WHEELS FOR A WHILE </title>
         <link rel="shortcut icon" type="image/png" href="assets/img/P.png.png">
    
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -27,7 +27,7 @@ if(isset($_SESSION['login_client'])){
                     <i class="fa fa-bars"></i>
                     </button>
                 <a class="navbar-brand page-scroll" href="index.php">
-                   kotse </a>
+                   WHEELS FOR A WHILE </a>
             </div>
            
 
@@ -39,7 +39,7 @@ if(isset($_SESSION['login_client'])){
     </nav>
         <div class="container">
             <div class="jumbotron">
-                <h1> Admin of kotse?</span>
+                <h1> Admin of WHEELS FOR A WHILE?</span>
                 </h1>
                 <br>
                 
@@ -103,7 +103,7 @@ if(isset($_SESSION['login_client'])){
             <hr>
             <div class="row">
                 <div class="col-sm-6">
-                    <h5>©kotse</h5>
+                    <h5>©WHEELS FOR A WHILE</h5>
                 </div>
             </div>
         </div>

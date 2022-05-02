@@ -1,7 +1,7 @@
 <html>
 
   <head>
-    <title> customer Signup | kotse </title>
+    <title> customer Signup | WHEELS FOR A WHILE </title>
   </head>
   <link rel="shortcut icon" type="image/png" href="assets/img/P.png.png">
   <link rel="stylesheet" type = "text/css" href ="assets/css/manager_registered_success.css">
@@ -44,7 +44,7 @@
                     <i class="fa fa-bars"></i>
                     </button>
                 <a class="navbar-brand page-scroll" href="index.php">
-                   kotse </a>
+                   WHEELS FOR A WHILE </a>
             </div>
             
             <?php include'alllogins.php'; ?>
