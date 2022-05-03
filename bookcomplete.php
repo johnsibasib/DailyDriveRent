@@ -10,6 +10,7 @@
     $rent_end_date = date('Y-m-d', strtotime($_POST['rent_end_date']));
     $return_status = "NR"; // not returned
     $fare = "NA";
+    $MOP = $_POST['subject'];
 
 
     function dateDiff($start, $end) {
@@ -41,8 +42,8 @@
         }
     }
     if($err_date >= 0) { 
-    $sql1 = "INSERT into rentedcars(customer_username,car_id,driver_id,booking_date,rent_start_date,rent_end_date,fare,charge_type,return_status) 
-    VALUES('" . $customer_username . "','" . $car_id . "','" . $driver_id . "','" . date("Y-m-d") ."','" . $rent_start_date ."','" . $rent_end_date . "','" . $fare . "','" . $charge_type . "','" . $return_status . "')";
+    $sql1 = "INSERT into rentedcars(customer_username,car_id,driver_id,booking_date,rent_start_date,rent_end_date,fare,charge_type,return_status,MOP) 
+    VALUES('" . $customer_username . "','" . $car_id . "','" . $driver_id . "','" . date("Y-m-d") ."','" . $rent_start_date ."','" . $rent_end_date . "','" . $fare . "','" . $charge_type . "','" . $return_status . "','" . $MOP . "')";
     $result1 = $conn->query($sql1);
 
     $sql2 = "UPDATE cars SET car_availability = 'no' WHERE car_id = '$car_id'";

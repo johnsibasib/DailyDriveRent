@@ -42,7 +42,7 @@ $car_return_date = date('Y-m-d');
 $return_status = "R";
 $login_customer = $_SESSION['login_customer'];
 
-$sql0 = "SELECT rc.id, rc.rent_end_date, rc.charge_type, rc.rent_start_date, c.car_name, c.car_nameplate FROM rentedcars rc, cars c WHERE id = '$id' AND c.car_id = rc.car_id";
+$sql0 = "SELECT rc.id, rc.rent_end_date, rc.charge_type, rc.rent_start_date,rc.MOP, c.car_name, c.car_nameplate FROM rentedcars rc, cars c WHERE id = '$id' AND c.car_id = rc.car_id";
 $result0 = $conn->query($sql0);
 
 if(mysqli_num_rows($result0) > 0) {
@@ -52,6 +52,7 @@ if(mysqli_num_rows($result0) > 0) {
             $car_name = $row0["car_name"];
             $car_nameplate = $row0["car_nameplate"];
             $charge_type = $row0["charge_type"];
+            $MOP = $row0["MOP"];
     }
 }
 
@@ -121,6 +122,8 @@ else {
                     echo ($fare . "/km");
                 }
             ?></h4>
+                <br>
+                <h4> <strong>Mode Of Payment: </strong> <?php echo $MOP;?></h4>
                 <br>
                 <h4> <strong>Booking Date: </strong> <?php echo date("Y-m-d"); ?> </h4>
                 <br>

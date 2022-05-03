@@ -38,7 +38,7 @@ function dateDiff($start, $end) {
     return round($diff / 86400);
 }
  $id = $_GET["id"];
- $sql1 = "SELECT c.car_name, c.car_nameplate, rc.rent_start_date, rc.rent_end_date, rc.fare, rc.charge_type, d.driver_name, d.driver_phone
+ $sql1 = "SELECT c.car_name, c.car_nameplate, rc.rent_start_date, rc.rent_end_date, rc.fare, rc.charge_type, rc.MOP, d.driver_name, d.driver_phone
  FROM rentedcars rc, cars c, driver d
  WHERE id = '$id' AND c.car_id=rc.car_id AND d.driver_id = rc.driver_id";
  $result1 = $conn->query($sql1);
@@ -53,6 +53,7 @@ function dateDiff($start, $end) {
         $fare = $row["fare"];
         $charge_type = $row["charge_type"];
         $no_of_days = dateDiff("$rent_start_date", "$rent_end_date");
+        $MOP = $row["MOP"];
     }
 }
 ?>
@@ -80,6 +81,8 @@ function dateDiff($start, $end) {
                 }
             ?>
             </h5>
+
+            <h5> Mode Of Payment:&nbsp;  <?php echo($MOP);?></h5>
 
            <h5> Staff Name:&nbsp;  <?php echo($driver_name);?></h5>
 

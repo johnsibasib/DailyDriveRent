@@ -55,12 +55,12 @@ if(!isset($_SESSION['login_customer'])){
                 $non_ac_price = $row1["non_ac_price"];
                 $ac_price_per_day = $row1["ac_price_per_day"];
                 $non_ac_price_per_day = $row1["non_ac_price_per_day"];
+                $MOP = $row1["MOP"];
             }
         }
 
         ?>
 
-          
               <h5> Car:&nbsp;<?php echo($car_name);?></h5>
             <h5> Vehicle Number:&nbsp; <?php echo($car_nameplate);?></h5>
         <?php $today = date("Y-m-d") ?>
@@ -93,7 +93,14 @@ if(!isset($_SESSION['login_customer'])){
          <h5> Choose charge type:  &nbsp;
             <input onclick="reveal()" type="radio" name="radio1" value="km"> per km(s) &nbsp;
             <input onclick="reveal()" type="radio" name="radio1" value="days"> per day(s)
+            <br><br>
 
+            <form method="POST">
+            Mode Of Payment: <select name="subject" id="subject">
+            <option value="Cash" selected="selected">Cash</option>
+            <option value="Bank Transfer" selected="selected">Bank Transfer</option>
+            </select>
+        </form>
             <br><br>
               
                 Staff: &nbsp;

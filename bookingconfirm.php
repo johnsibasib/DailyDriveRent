@@ -29,6 +29,7 @@ if(!isset($_SESSION['login_customer'])){
     $rent_end_date = date('Y-m-d', strtotime($_POST['rent_end_date']));
     $return_status = "NR"; // not returned
     $fare = "NA";
+    $MOP = $_POST['subject'];
 
 
     function dateDiff($start, $end) {
@@ -60,8 +61,8 @@ if(!isset($_SESSION['login_customer'])){
         }
     }
     if($err_date >= 0) { 
-    $sql1 = "INSERT into rentedcars(customer_username,car_id,driver_id,booking_date,rent_start_date,rent_end_date,fare,charge_type,return_status) 
-    VALUES('" . $customer_username . "','" . $car_id . "','" . $driver_id . "','" . date("Y-m-d") ."','" . $rent_start_date ."','" . $rent_end_date . "','" . $fare . "','" . $charge_type . "','" . $return_status . "')";
+    $sql1 = "INSERT into rentedcars(customer_username,car_id,driver_id,booking_date,rent_start_date,rent_end_date,fare,charge_type,return_status,MOP) 
+    VALUES('" . $customer_username . "','" . $car_id . "','" . $driver_id . "','" . date("Y-m-d") ."','" . $rent_start_date ."','" . $rent_end_date . "','" . $fare . "','" . $charge_type . "','" . $return_status . "','" . $MOP . "')";
     $result1 = $conn->query($sql1);
 
     $sql2 = "UPDATE cars SET car_availability = 'no' WHERE car_id = '$car_id'";
@@ -85,6 +86,7 @@ if(!isset($_SESSION['login_customer'])){
             $driver_phone = $row["driver_phone"];
             $client_name = $row["client_name"];
             $client_phone = $row["client_phone"];
+            $MOP = $row["MOP"];
         }
     }
 
@@ -139,7 +141,8 @@ if(!isset($_SESSION['login_customer'])){
                     <h4> <strong>Fare:</strong> ₱<?php echo $fare; ?>/km</h4>
 
                 <?php } ?>
-
+                <br>
+                <h4> <strong>Mode Of Payment: </strong> <?php echo $MOP; ?> </h4>
                 <br>
                 <h4> <strong>Booking Date: </strong> <?php echo date("Y-m-d"); ?> </h4>
                 <br>
