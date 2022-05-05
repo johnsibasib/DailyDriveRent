@@ -69,7 +69,9 @@
                     <li>
                         <a href="customerlogin.php">Customer</a>
                     </li>
-                    
+                    <li>
+                        <a href="aboutus.php">About Us</a>
+                    </li>
                 </ul>
             </div>
                 <?php   }
