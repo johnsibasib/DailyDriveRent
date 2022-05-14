@@ -72,6 +72,9 @@
                     <li>
                         <a href="aboutus.php">About Us</a>
                     </li>
+                    <li>
+                        <a href="feedbackdes.php">Feedback</a>
+                    </li>
                 </ul>
             </div>
                 <?php   }

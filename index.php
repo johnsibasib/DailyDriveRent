@@ -6,9 +6,12 @@ require 'connection.php';
 $conn = Connect();
 ?>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WHEELS FOR A WHILE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Elegant Feedback Form  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
     <link rel="shortcut icon" type="image/png" href="assets/img/P.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     
@@ -21,11 +24,10 @@ $conn = Connect();
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
   
-    <nav class="navbar navbar-custom navbar-fixed-top " role="navigation" >
+    <nav class="navbar navbar-custom navbar-fixed-top " role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
+                <button type="button" class="navbar-toggle"style="background-color: grey;border: transparent;background-image: url('assets/img/menubar.png');background-size: cover;" data-toggle="collapse" data-target=".navbar-main-collapse">
                     </button>
                 <a class="navbar-brand page-scroll" href="index.php">
                    WHEELS FOR A WHILE </a>
@@ -39,7 +41,7 @@ $conn = Connect();
 
    
     </nav>
-    <div class="bgimg-1">
+    <div style="background-image: url('assets/img/lets.jpg');min-height: 100%;background-position: center;position: relative;background-size: cover;">
         <header class="intro">
             <div class="intro-body">
                 <div class="container">
