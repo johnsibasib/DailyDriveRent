@@ -50,8 +50,8 @@ if(isset($_SESSION['login_client'])){
                 <div class="panel panel-primary">
 
 
-                    <div class="panel-heading"> Admin </div>
-                    <div class="panel-body" style="padding: 140px;background-image: url('assets/img/admin.png');background-size: cover;">
+                    
+                    <div class="panel-body" style="padding: 145px;background-image: url('assets/img/ADMIN.png');background-size: cover;">
 
                         <form action="" method="POST">
 

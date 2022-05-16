@@ -14,6 +14,12 @@ include('session_client.php'); ?>
 <link rel="stylesheet" type="text/css" media="screen" href="assets/css/clientpage.css" />
 </head>
 <body>
+<style>
+body {
+  background-image: url('assets/img/CLIENTLOGIN.png');
+}
+</style>
+  
 
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
         <div class="container">
@@ -31,9 +37,9 @@ include('session_client.php'); ?>
        
     </nav>
 
-    <div class="container" style="margin-top: 65px;" >
+    <div class="container" style="margin-top: 65px;">
     <div class="col-md-7" style="float: none; margin: 0 auto;">
-      <div class="form-area">
+      <div class="form-area" style=" background-image: url('assets/img/ADMIN.png');">
         <form role="form" action="entercar1.php" enctype="multipart/form-data" method="POST">
         <br style="clear: both">
           <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> Add Car</h3>
@@ -72,7 +78,7 @@ include('session_client.php'); ?>
 
 
         <div class="col-md-12" style="float: none; margin: 0 auto;">
-    <div class="form-area" style="padding: 0px 100px 100px 100px;">
+    <div class="form-area" style="padding: 0px 100px 100px 100px; background-image: url('assets/img/ADMIN.png');background-size: cover;">
         <form action="" method="POST">
         <br style="clear: both">
           <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> My Cars </h3>

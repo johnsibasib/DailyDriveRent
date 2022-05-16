@@ -90,7 +90,7 @@ $conn = Connect();
             <?php }}
             else {
                 ?>
-<h1> Wait for Others to Return Sorry:( No cars available :( </h1>
+<h1> There are no available cars, please wait to return! </h1>
                 <?php
             }
             ?>                                   

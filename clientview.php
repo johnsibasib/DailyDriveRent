@@ -16,7 +16,12 @@ $conn = Connect();
 <link rel="stylesheet" type="text/css" media="screen" href="assets/css/clientpage.css" />
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
+<style>
+body {
+  background-image: url('assets/img/CLIENTLOGIN.png');
+}
+</style>
+  
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
         <div class="container">
             <div class="navbar-header">
@@ -85,7 +90,7 @@ $conn = Connect();
 <br>
 <br>
         <div class="container">
-      <div class="jumbotron">
+      <div class="jumbotron" style="background-image: url('assets/img/ADMIN.png');background-size: cover;">
         <h1>No booked cars</h1>
         <p> Rent some cars now <?php echo $conn->error; ?> </p>
       </div>
