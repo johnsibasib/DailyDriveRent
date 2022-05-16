@@ -12,7 +12,7 @@ $conn = Connect();
 <meta name="keywords" content="Elegant Feedback Form  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <link rel="shortcut icon" type="image/png" href="assets/img/P.png">
+    <link rel="shortcut icon" type="image/png" href="assets/img/icon.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="assets/css/user.css">
@@ -24,22 +24,22 @@ $conn = Connect();
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
   
-    <nav class="navbar navbar-custom navbar-fixed-top " role="navigation">
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle"style="background-color: grey;border: transparent;background-image: url('assets/img/menubar.png');background-size: cover;" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <button type="button" class="navbar-toggle" style="background-color: grey;border: transparent;background-image: url('assets/img/menubar.png');background-size: cover;"data-toggle="collapse" data-target=".navbar-main-collapse">
                     </button>
                 <a class="navbar-brand page-scroll" href="index.php">
                    WHEELS FOR A WHILE </a>
             </div>
-         
-
-            <?php include 'alllogins.php';?>
            
+
+            <?php include 'alllogins.php'; ?>
+
+                        
         </div>
-
-
-   
+       
     </nav>
     <div style="background-image: url('assets/img/lets.jpg');min-height: 100%;background-position: center;position: relative;background-size: cover;">
         <header class="intro">
