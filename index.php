@@ -16,6 +16,16 @@ $conn = Connect();
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="assets/css/user.css">
+
+    <!-- !!FOOTER!!-->
+    <link rel="stylesheet" type="text/css" href="assets/css/ourteam2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Web Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
    
     
     
@@ -100,9 +110,38 @@ $conn = Connect();
         <div style="color:#ddd;background-image: url('assets/img/bgg.png');background-size: cover;padding:170px 150px;">
             
         </div>
-        <footer>
-            <h1>PUTANGINA MO ZYRA</h1>
-        </footer>
+<!------footer start--------->
+<footer class="d-flex p-2">
+		<p>INSIGHTS</p>
+		<p>For more reservation, please click on the link below to contact us.</p> 
+        
+		<div class="social" >
+			<a href="#"><i class="fab fa-facebook-f"onClick="window.open('https://www.facebook.com/TeptechService')" data-bs-toggle="tooltip" data-bs-placement="top" title="@TeptechService"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i  type="button" onClick="copyText()"class="fas fa-envelope-square"  data-bs-toggle="tooltip" data-bs-placement="top" title="insightsofficialweb@gmail.com"></i></a>
+		 </div>
+            <img src="img/footer2.png" width="1150">
+        <div>
+             <img src="img/footer.png" width="1350" height="37">
+        </div>
+        <p hidden><input  type="text" value="insightsofficialweb@gmail.com" id="myInput" style= "display: block;"></p>
+
+        <script>
+            function copyText() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  alert("Text Copied: " + copyText.value);
+}
+        </script>
+    </footer>
     
     </script>
     <script>

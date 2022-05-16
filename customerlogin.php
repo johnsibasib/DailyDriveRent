@@ -29,7 +29,7 @@ header("location: index.php");
     </head>
     
 
-    <body background="assets/img/BG2.png">
+    <body style = "background-image: url('assets/img/BG2.png');background-size: cover;">
                
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
         <div class="container">
