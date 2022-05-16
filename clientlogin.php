@@ -22,7 +22,7 @@ if(isset($_SESSION['login_client'])){
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/clientlogin.css">
 </head>
-    <body style = "background-image: url('assets/img/forcustomer.png');background-size: cover;">
+    <body style = "background-image: url('assets/img/CLIENTLOGIN.png');background-size: cover;">
            <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
         <div class="container">
@@ -39,24 +39,19 @@ if(isset($_SESSION['login_client'])){
                         
         </div>
        
-    </nav>
-        <div class="container" >
-            <div class="jumbotron">
-                <h1> Admin of WHEELS FOR A WHILE?</span>
-                </h1>
-                <br>
+   
                 
             </div>
         </div>
 
-        <div class="container" style="margin-top: -2%; margin-bottom: 2%;" >
+        <div class="container">
             <div class="col-md-5 col-md-offset-4">
                 <label style="margin-left: 5px;color: red;"><span> <?php echo $error;  ?> </span></label>
                 <div class="panel panel-primary">
 
 
                     <div class="panel-heading"> Admin </div>
-                    <div class="panel-body">
+                    <div class="panel-body" style="padding: 140px;background-image: url('assets/img/admin.png');background-size: cover;">
 
                         <form action="" method="POST">
 

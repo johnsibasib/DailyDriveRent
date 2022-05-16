@@ -41,7 +41,7 @@ $conn = Connect();
         </div>
        
     </nav>
-    <div style="background-image: url('assets/img/lets.jpg');min-height: 100%;background-position: center;position: relative;background-size: cover;">
+    <div style="background-image: url('assets/img/lets.png');min-height: 100%;background-position: center;position: relative;background-size: cover;">
         <header class="intro">
             <div class="intro-body">
                 <div class="container">
@@ -49,7 +49,7 @@ $conn = Connect();
                         <div class="col-md-8 col-md-offset-2">
                             <h1 class="brand-heading" style="color: white">WHEELS FOR A WHILE</h1>
                             <p class="intro-text">
-                                Online car rental service
+                                ONLINE CAR RENTAL SERVICES
                             </p>
                             <a href="#sec2" class="btn btn-circle page-scroll blink">
                                 <i class="fa fa-angle-double-down animated"></i>
@@ -97,18 +97,12 @@ $conn = Connect();
         </section>
                     
     </div>
-
-    <div class="bgimg-2">
-        <div class="caption">
-            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
-        </div>
-    </div>
-
-    <div style="position:relative;">
-        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <div style="color:#ddd;background-image: url('assets/img/bgg.png');background-size: cover;padding:170px 150px;">
             
         </div>
-    </div>
+        <footer>
+            <h1>PUTANGINA MO ZYRA</h1>
+        </footer>
     
     </script>
     <script>
