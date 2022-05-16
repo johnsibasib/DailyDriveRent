@@ -42,7 +42,7 @@ body {
       <div class="form-area" style="background-image: url('assets/img/ADMIN.png');background-size: cover;">
         <form role="form" action="enterdriver1.php" method="POST">
         <br style="clear: both">
-          <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> Enter New Staff </h3>
+          <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px; color: black;"> Enter New Staff </h3>
 
           <div class="form-group">
             <input type="text" class="form-control" id="driver_name" name="driver_name" placeholder="Staff Name " required autofocus="">
@@ -67,7 +67,7 @@ body {
 
 
 
-          <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> Login form of staff </h3>
+          <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px; color: black;"> Login form of staff </h3>
 
           <form role="form" action="client_registered_success.php" method="POST">
 
@@ -166,7 +166,7 @@ body {
     <div class="form-area" style="padding: 0px 100px 100px 100px;background-image: url('assets/img/ADMIN.png');background-size: cover; ">
         <form action="" method="POST">
         <br style="clear: both">
-          <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> Record of Staff </h3>
+          <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px; color: black;"> Record of Staff </h3>
 <?php
 
 $user_check=$_SESSION['login_client'];
@@ -180,12 +180,12 @@ if (mysqli_num_rows($result) > 0) {
     <thead class="thead-dark">
       <tr>
         <th>     </th>
-        <th> Name</th>
-        <th> Gender </th>
-        <th> Code </th>
-        <th> Contact </th>
-        <th> Address </th>
-        <th> Availability </th>
+        <th style="color: white;"> Name</th>
+        <th style="color: white;"> Gender </th>
+        <th style="color: white;"> Code </th>
+        <th style="color: white;"> Contact </th>
+        <th style="color: white;"> Address </th>
+        <th style="color: white;"> Availability </th>
       </tr>
     </thead>
 

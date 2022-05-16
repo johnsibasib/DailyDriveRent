@@ -48,10 +48,8 @@ if(isset($_SESSION['login_client'])){
             <div class="col-md-5 col-md-offset-4">
                 <label style="margin-left: 5px;color: red;"><span> <?php echo $error;  ?> </span></label>
                 <div class="panel panel-primary">
-
-
-                    
-                    <div class="panel-body" style="padding: 145px;background-image: url('assets/img/ADMIN.png');background-size: cover;">
+                <div class="panel-heading"> Admin Login </div>
+                    <div class="panel-body" style="padding: 130px;background-image: url('assets/img/ADMIN.png');background-size: cover;">
 
                         <form action="" method="POST">
 

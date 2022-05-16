@@ -15,7 +15,7 @@ if(!isset($_SESSION['login_customer'])){
 
 </head>
 
-<body>
+    <body background="assets/img/confirm.png">
 
 <?php
 
@@ -116,47 +116,49 @@ if(!isset($_SESSION['login_customer'])){
 <br>
 <br>
 <br>
-
     <div class="container">
+    <div class="container" style="margin-bottom: 0px; margin-top:0">
+    <div class="col-md-7" style="float: none; margin: 0 auto; border-style: inset; background-image: url('assets/img/confirm1.png'); background-size: cover;">
+      <div class="form-area" style= "padding: 0px;"> </div>
         
         <div class="box">
             <div class="col-md-10" style="float: none; margin: 0 auto; text-align: center;">
-                <h3>Confirmation Process</h3>
+                <h3 style="color: black;">Confirmation Process</h3>
                 <br>
-                <h3 style="color: orange;">Booking</h3>
+                <h3 style="color: black;">Booking</h3>
                 <br>
             </div>
             <div class="col-md-10" style="float: none; margin: 0 auto; ">
-                <h4> <strong>Vehicle Name: </strong> <?php echo $car_name; ?></h4>
+                <h4 style="color: white;"> <strong>Vehicle Name: </strong> <?php echo $car_name; ?></h4>
                 <br>
-                <h4> <strong>Vehicle Number:</strong> <?php echo $car_nameplate; ?></h4>
+                <h4 style="color: white;"> <strong>Vehicle Number:</strong> <?php echo $car_nameplate; ?></h4>
                 <br>
                 
                 <?php     
                 if($charge_type == "days"){
                 ?>
-                     <h4> <strong>Fare:</strong> ₱<?php echo $fare; ?>/day</h4>
+                     <h4 style="color: white;"> <strong>Fare:</strong> ₱<?php echo $fare; ?>/day</h4>
                 <?php } else {
                     ?>
-                    <h4> <strong>Fare:</strong> ₱<?php echo $fare; ?>/km</h4>
+                    <h4 style="color: white;"> <strong>Fare:</strong> ₱<?php echo $fare; ?>/km</h4>
 
                 <?php } ?>
                 <br>
-                <h4> <strong>Mode Of Payment: </strong> <?php echo $MOP; ?> </h4>
+                <h4 style="color: white;"> <strong>Mode Of Payment: </strong> <?php echo $MOP; ?> </h4>
                 <br>
-                <h4> <strong>Booking Date: </strong> <?php echo date("Y-m-d"); ?> </h4>
+                <h4 style="color: white;"> <strong>Booking Date: </strong> <?php echo date("Y-m-d"); ?> </h4>
                 <br>
-                <h4> <strong>Start Date: </strong> <?php echo $rent_start_date; ?></h4>
+                <h4 style="color: white;"> <strong>Start Date: </strong> <?php echo $rent_start_date; ?></h4>
                 <br>
-                <h4> <strong>Return Date: </strong> <?php echo $rent_end_date; ?></h4>
+                <h4 style="color: white;"> <strong>Return Date: </strong> <?php echo $rent_end_date; ?></h4>
                 <br>
-                <h4> <strong>Staff License number: </strong>  <?php echo $dl_number; ?> </h4>
+                <h4 style="color: white;"> <strong>Staff License number: </strong>  <?php echo $dl_number; ?> </h4>
                 <br>
-                <h4> <strong>Staff Contact:</strong>  <?php echo $driver_phone; ?></h4>
+                <h4 style="color: white;"> <strong>Staff Contact:</strong>  <?php echo $driver_phone; ?></h4>
                 <br>
-                <h4> <strong>Staff Name:</strong>  <?php echo $client_name; ?></h4>
+                <h4 style="color: white;"> <strong>Staff Name:</strong>  <?php echo $client_name; ?></h4>
                 <br>
-                <h4> <strong>Staff Contact: </strong> <?php echo $client_phone; ?></h4>
+                <h4 style="color: white;"> <strong>Staff Contact: </strong> <?php echo $client_phone; ?></h4>
                 <br>
             </div>
         </div>
@@ -184,8 +186,10 @@ if(!isset($_SESSION['login_customer'])){
 	<div class="jumbotron" style="text-align: center;">
         You have selected an incorrect date.
         <br><br>
+    </div>
 </div>
                 <?php } ?>
+                </body>
 
 
 </html>

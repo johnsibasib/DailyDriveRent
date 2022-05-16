@@ -30,7 +30,7 @@ $conn = Connect();
         </div>
       
     </nav>
-<body>
+<body background="assets/img/confirm.png">
 
 <?php 
 $id = $_GET["id"];
@@ -96,26 +96,26 @@ else {
     <br>
     <br>
 
-    <h2 class="text-center"> Thank you for visiting! We wish you have a safe ride. </h2>
-
+    <h2 class="text-center" style="color: white;"> Thank you for visiting! We wish you have a safe ride. </h2>
 
     <div class="container">
-        <h5 class="text-center">Please read the following information about your order.</h5>
-        <div class="box">
-            <div class="col-md-10" style="float: none; margin: 0 auto; text-align: center;">
-                
+    <div class="container" style="margin-bottom: 65px; margin-top:0">
+    <div class="col-md-7" style="float: none; margin: 0 auto; border-style: inset; background-image: url('assets/img/confirm1.png'); background-size: cover;">
+      <div class="form-area" style= "padding: 0px;"> </div>
+
+        <h5 style="color: black;" class="text-center">Please read the following information about your order.</h5>
                 <br>
-                <h4>Please make a note of your <strong>order number</strong> now and keep in the event you need to communicate with us about your order.</h4>
+                <h4 style="color: black;">Please make a note of your <strong>order number</strong> now and keep in the event you need to communicate with us about your order.</h4>
                 <br>
-                <h3 style="color: orange;">Details</h3>
+                <h3 style="color: black;">Details</h3>
                 <br>
-            </div>
+
             <div class="col-md-10" style="float: none; margin: 0 auto; ">
-                <h4> <strong>Vehicle Name: </strong> <?php echo $car_name;?></h4>
+                <h4 style="color: white;"> <strong>Vehicle Name: </strong> <?php echo $car_name;?></h4>
                 <br>
-                <h4> <strong>Vehicle Number:</strong> <?php echo $car_nameplate; ?></h4>
+                <h4 style="color: white;"> <strong>Vehicle Number:</strong> <?php echo $car_nameplate; ?></h4>
                 <br>
-                <h4> <strong>Fare:&nbsp;</strong>  ₱<?php 
+                <h4 style="color: white;"> <strong>Fare:&nbsp;</strong>  ₱<?php 
             if($charge_type == "days"){
                     echo ($fare . "/day");
                 } else {
@@ -123,35 +123,35 @@ else {
                 }
             ?></h4>
                 <br>
-                <h4> <strong>Mode Of Payment: </strong> <?php echo $MOP;?></h4>
+                <h4 style="color: white;"> <strong>Mode Of Payment: </strong> <?php echo $MOP;?></h4>
                 <br>
-                <h4> <strong>Booking Date: </strong> <?php echo date("Y-m-d"); ?> </h4>
+                <h4 style="color: white;"> <strong>Booking Date: </strong> <?php echo date("Y-m-d"); ?> </h4>
                 <br>
-                <h4> <strong>Start Date: </strong> <?php echo $rent_start_date; ?></h4>
+                <h4 style="color: white;"> <strong>Start Date: </strong> <?php echo $rent_start_date; ?></h4>
                 <br>
-                <h4> <strong>Rent End Date: </strong> <?php echo $rent_end_date; ?></h4>
+                <h4 style="color: white;"> <strong>Rent End Date: </strong> <?php echo $rent_end_date; ?></h4>
                 <br>
-                <h4> <strong>Car Return Date: </strong> <?php echo $car_return_date; ?> </h4>
+                <h4 style="color: white;"> <strong>Car Return Date: </strong> <?php echo $car_return_date; ?> </h4>
                 <br>
                 <?php if($charge_type == "days"){?>
-                    <h4> <strong>Number of days:</strong> <?php echo $distance_or_days; ?>day(s)</h4>
+                    <h4 style="color: white;"> <strong>Number of days:</strong> <?php echo $distance_or_days; ?>day(s)</h4>
                 <?php } else { ?>
-                    <h4> <strong>Distance Travelled:</strong> <?php echo $distance_or_days; ?>km(s)</h4>
+                    <h4 style="color: white;"> <strong>Distance Travelled:</strong> <?php echo $distance_or_days; ?>km(s)</h4>
                 <?php } ?>
                 <br>
                 <?php
                     if($extra_days > 0){
                         
                 ?>
-                <h4> <strong>Total Fine:</strong> <label class="text-danger"> ₱<?php echo $total_fine; ?>/- </label> for <?php echo $extra_days;?> extra days.</h4>
+                <h4 style="color: white;"> <strong>Total Fine:</strong> <label class="text-danger"> ₱<?php echo $total_fine; ?>/- </label> for <?php echo $extra_days;?> extra days.</h4>
                 <br>
                 <?php } ?>
-                <h4> <strong>Total Amount: </strong> ₱<?php echo $total_amount; ?>/-     </h4>
+                <h4 style="color: white;"> <strong>Total Amount: </strong> ₱<?php echo $total_amount; ?>/-     </h4>
                 <br>
             </div>
         </div>
         <div class="col-md-12" style="float: none; margin: 0 auto; text-align: center;">
-            <h6>Warning! <strong>Do not reload this page</strong> or the above display will be lost. If you want a hardcopy of this page, please print it now.</h6>
+            <h6 style="color: white;">Warning! <strong>Do not reload this page</strong> or the above display will be lost. If you want a hardcopy of this page, please print it now.</h6>
         </div>
     </div>
 

@@ -14,6 +14,7 @@ $conn = Connect();
 <link rel="stylesheet" type="text/css" media="screen" href="assets/css/clientpage.css" />
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body background="assets/img/return.png">
 
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
         <div class="container">
@@ -59,21 +60,21 @@ function dateDiff($start, $end) {
 ?>
     <div class="container" style="margin-top: 65px;" >
     <div class="col-md-7" style="float: none; margin: 0 auto;">
-      <div class="form-area">
+      <div class="form-area" style="background-image: url('assets/img/return1.png'); background-size: cover;">
         <form role="form" action="printbill.php?id=<?php echo $id ?>" method="POST">
         <br style="clear: both">
-          <h3 style="margin-bottom: 5px; text-align: center; font-size: 30px;"> Returning Details </h3>
-          <h6 style="margin-bottom: 25px; text-align: center; font-size: 12px;"> Allow your driver to fill the below form </h6>
+          <h3 style="margin-bottom: 5px; text-align: center; font-size: 30px; color: black;"> Returning Details </h3>
+          <h6 style="margin-bottom: 25px; text-align: center; font-size: 12px; color: black;"> Allow your driver to fill the below form </h6>
 
-           <h5> Car:&nbsp;  <?php echo($car_name);?></h5>
+           <h5 style="color: white;"> Car:&nbsp;  <?php echo($car_name);?></h5>
 
-           <h5> Vehicle Number:&nbsp;  <?php echo($car_nameplate);?></h5>
+           <h5 style="color: white;"> Vehicle Number:&nbsp;  <?php echo($car_nameplate);?></h5>
 
-           <h5> Rent date:&nbsp;  <?php echo($rent_start_date);?></h5>
+           <h5 style="color: white;"> Rent date:&nbsp;  <?php echo($rent_start_date);?></h5>
 
-           <h5> End Date:&nbsp;  <?php echo($rent_end_date);?></h5>
+           <h5 style="color: white;"> End Date:&nbsp;  <?php echo($rent_end_date);?></h5>
 
-           <h5> Fare:&nbsp;  ₱<?php 
+           <h5 style="color: white;"> Fare:&nbsp;  ₱<?php 
             if($charge_type == "days"){
                     echo ($fare . "/day");
                 } else {
@@ -82,17 +83,17 @@ function dateDiff($start, $end) {
             ?>
             </h5>
 
-            <h5> Mode Of Payment:&nbsp;  <?php echo($MOP);?></h5>
+            <h5 style="color: white;"> Mode Of Payment:&nbsp;  <?php echo($MOP);?></h5>
 
-           <h5> Staff Name:&nbsp;  <?php echo($driver_name);?></h5>
+           <h5 style="color: white;"> Staff Name:&nbsp;  <?php echo($driver_name);?></h5>
 
-           <h5> Contact:&nbsp;  <?php echo($driver_phone);?></h5>
+           <h5 style="color: white;"> Contact:&nbsp;  <?php echo($driver_phone);?></h5>
           <?php if($charge_type == "km") { ?>
           <div class="form-group">
             <input type="text" class="form-control" id="distance_or_days" name="distance_or_days" placeholder="Enter the distance travelled (in km)" required="" autofocus>
           </div>
           <?php }  else { ?>
-            <h5> Number of Day(s):&nbsp;  <?php echo($no_of_days);?></h5>
+            <h5 style="color: white;"> Number of Day(s):&nbsp;  <?php echo($no_of_days);?></h5>
             <input type="hidden" name="distance_or_days" value="<?php echo $no_of_days; ?>">
           <?php } ?>
           <input type="hidden" name="hid_fare" value="<?php echo $fare; ?>">

@@ -22,6 +22,7 @@ $conn = Connect();
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <body background="assets/img/BG2.png">
 
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
         <div class="container">
@@ -53,9 +54,9 @@ $conn = Connect();
 <br>
 <br>
 <div class="container">
-      <div class="jumbotron">
-        <h1>Return your cars here</h1>
-        <p> Hope you enjoyed our service </p>
+      <div class="jumbotron" style="background-image: url('assets/img/CUSTOMER.png');background-size: cover;">
+        <h1 style="color: white;">Return your cars here</h1>
+        <p style="color: white;"> Hope you enjoyed our service </p>
       </div>
     </div>
 
@@ -98,7 +99,7 @@ $conn = Connect();
 <br>
 <br>
             <div class="container">
-      <div class="jumbotron">
+      <div class="jumbotron" style="background-image: url('assets/img/CUSTOMER.png');background-size: cover;">>
         <h1>No cars to return.</h1>
         <p> Hope you enjoyed our service </p>
       </div>

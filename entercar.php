@@ -42,7 +42,7 @@ body {
       <div class="form-area" style=" background-image: url('assets/img/ADMIN.png');">
         <form role="form" action="entercar1.php" enctype="multipart/form-data" method="POST">
         <br style="clear: both">
-          <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> Add Car</h3>
+          <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px; color: black;"> Add Car</h3>
 
           <div class="form-group">
             <input type="text" class="form-control" id="car_name" name="car_name" placeholder="Car Name " required autofocus="">
@@ -81,7 +81,7 @@ body {
     <div class="form-area" style="padding: 0px 100px 100px 100px; background-image: url('assets/img/ADMIN.png');background-size: cover;">
         <form action="" method="POST">
         <br style="clear: both">
-          <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> My Cars </h3>
+          <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px; color: black;"> My Cars </h3>
 <?php
 
 $user_check=$_SESSION['login_client'];
@@ -95,13 +95,13 @@ if (mysqli_num_rows($result) > 0) {
     <thead class="thead-dark">
       <tr>
         <th></th>
-        <th width="24%"> Name</th>
-        <th width="15%"> Nameplate </th>
-        <th width="13%"> AC Fare (/km) </th>
-        <th width="17%"> Non-AC Fare (/km)</th>
-        <th width="13%"> AC Fare (/day)</th>
-        <th width="17%"> Non-AC Fare (/day)</th>
-        <th width="1%"> Availability </th>
+        <th style="color: white;" width="24%"> Name</th>
+        <th style="color: white;" width="15%"> Nameplate </th>
+        <th style="color: white;" width="13%"> AC Fare (/km) </th>
+        <th style="color: white;" width="17%"> Non-AC Fare (/km)</th>
+        <th style="color: white;" width="13%"> AC Fare (/day)</th>
+        <th style="color: white;" width="17%"> Non-AC Fare (/day)</th>
+        <th style="color: white;" width="1%"> Availability </th>
       </tr>
     </thead>
 

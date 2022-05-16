@@ -19,6 +19,7 @@ $conn = Connect();
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body background="assets/img/BG2.png">
 
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
         <div class="container">
@@ -50,9 +51,9 @@ $conn = Connect();
 <br>
 <br>
 <div class="container">
-      <div class="jumbotron">
-        <h1>Your Bookings</h1>
-        <p> Hope you enjoyed our service </p>
+      <div class="jumbotron" style= "background-image: url('assets/img/CUSTOMER.png');background-size: cover;">
+        <h1 style="color: white;">Your Bookings</h1>
+        <p style="color: white;"> Hope you enjoyed our service </p>
       </div>
     </div>
 
@@ -101,9 +102,9 @@ $conn = Connect();
 <br>
 <br>
         <div class="container">
-      <div class="jumbotron">
-        <h1>No booked cars</h1>
-        <p> Rent some cars now </p>
+      <div class="jumbotron" style= "background-image: url('assets/img/CUSTOMER.png');background-size: cover;">>
+        <h1 style="color: white;">No booked cars</h1>
+        <p style="color: white;"> Rent some cars now </p>
       </div>
     </div>
 

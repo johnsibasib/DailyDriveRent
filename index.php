@@ -47,7 +47,7 @@ $conn = Connect();
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <h1 class="brand-heading" style="color: white">WHEELS FOR A WHILE</h1>
+                            <h1 class="brand-heading" style="color: white;">WHEELS FOR A WHILE</h1>
                             <p class="intro-text">
                                 ONLINE CAR RENTAL SERVICES
                             </p>

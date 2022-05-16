@@ -51,8 +51,8 @@ body {
 <br>
 <br>
 <div class="container">
-      <div class="jumbotron">
-        <h1>Booking History</h1>
+      <div class="jumbotron" style="background-image: url('assets/img/ADMIN.png');background-size: cover;">
+        <h1 style="color: white;">Booking History</h1>
         
       </div>
     </div>
@@ -90,7 +90,7 @@ body {
 <br>
 <br>
         <div class="container">
-      <div class="jumbotron" style="background-image: url('assets/img/ADMIN.png');background-size: cover;">
+     <div class ="jumbotron" style="background-image: url('assets/img/ADMIN.png');background-size: cover;">
         <h1>No booked cars</h1>
         <p> Rent some cars now <?php echo $conn->error; ?> </p>
       </div>

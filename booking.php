@@ -15,6 +15,7 @@ if(!isset($_SESSION['login_customer'])){
    
 </head>
 <body ng-app=""> 
+    <body background="assets/img/booking.png">
 
       
      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
@@ -35,11 +36,12 @@ if(!isset($_SESSION['login_customer'])){
        
     </nav>
     
-<div class="container" style="margin-top: 65px;" >
-    <div class="col-md-7" style="float: none; margin: 0 auto;">
-      <div class="form-area">
+<div class="container" style="margin-top: 65px;">
+    <div class="col-md-7" style="float: none; margin: 0 auto;background-color: white; border-style: inset; border-color: white; background-image: url('assets/img/booking1.png'); background-size: cover;">
+      <div class="form-area" style= "padding: 80px;">
         <form role="form" action="bookingconfirm.php" method="POST">
         <br style="clear: both">
+        
          
 
         <?php
@@ -61,21 +63,21 @@ if(!isset($_SESSION['login_customer'])){
 
         ?>
 
-              <h5> Car:&nbsp;<?php echo($car_name);?></h5>
-            <h5> Vehicle Number:&nbsp; <?php echo($car_nameplate);?></h5>
+              <h5 style="color: white;"> Car:&nbsp;<?php echo($car_name);?></h5>
+            <h5 style="color: white;"> Vehicle Number:&nbsp; <?php echo($car_nameplate);?></h5>
         <?php $today = date("Y-m-d") ?>
-          <label><h5>Start Date:</h5></label>
+          <label><h5 style="color: white;">Start Date:</h5></label>
             <input type="date" name="rent_start_date" min="<?php echo($today);?>" required="">
             &nbsp;
-          <label><h5>End Date:</h5></label>
+          <label><h5 style="color: white;">End Date:</h5></label>
           <input type="date" name="rent_end_date" min="<?php echo($today);?>" required="">
-        <h5> Choose your car type:  &nbsp;
+        <h5 style="color: white;"> Choose your car type:  &nbsp;
             <input onclick="reveal()" type="radio" name="radio" value="ac" ng-model="myVar"> AC &nbsp;
             <input onclick="reveal()" type="radio" name="radio" value="non_ac" ng-model="myVar"> Non-AC
         <div ng-switch="myVar"> 
         <div ng-switch-default>
                     
-                <h5>Fare: <h5>    
+                <h5 style="color: white;">Fare: <h5>    
                 
                      </div>
                     <div ng-switch-when="ac">
@@ -90,21 +92,21 @@ if(!isset($_SESSION['login_customer'])){
                      </div>
         </div>
 
-         <h5> Choose charge type:  &nbsp;
+         <h5 style="color: white;"> Choose charge type:  &nbsp;
             <input onclick="reveal()" type="radio" name="radio1" value="km"> per km(s) &nbsp;
             <input onclick="reveal()" type="radio" name="radio1" value="days"> per day(s)
             <br><br>
 
             <form method="POST">
             Mode Of Payment: <select name="subject" id="subject">
-            <option value="Cash" selected="selected">Cash</option>
+            <option value="Cash" selected="selected" style="color: black;">Cash</option>
             <option value="Bank Transfer" selected="selected">Bank Transfer</option>
             </select>
         </form>
             <br><br>
               
                 Staff: &nbsp;
-                <select name="driver_id_from_dropdown" ng-model="myVar1">
+                <select name="driver_id_from_dropdown" style="color: black; ng-model="myVar1;>
                         <?php
                         $sql2 = "SELECT * FROM driver d WHERE d.driver_availability = 'yes' AND d.client_username IN (SELECT cc.client_username FROM clientcars cc WHERE cc.car_id = '$car_id')";
                         $result2 = mysqli_query($conn, $sql2);
@@ -161,7 +163,7 @@ if(!isset($_SESSION['login_customer'])){
         
       </div>
       <div class="col-md-12" style="float: none; margin: 0 auto; text-align: center;">
-            <h6><strong>Kindly Note:</strong> You will be charged ₱200 for each day after the due date.</h6>
+            <h6 style="color: black;"><strong>Kindly Note:</strong> You will be charged ₱200 for each day after the due date.</h6>
         </div>
     </div>
 

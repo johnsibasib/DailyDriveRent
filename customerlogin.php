@@ -29,7 +29,7 @@ header("location: index.php");
     </head>
     
 
-    <body background="assets/img/forcustomer.png">
+    <body background="assets/img/BG2.png">
                
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
         <div class="container">
@@ -48,27 +48,22 @@ header("location: index.php");
       
     </nav>
 
-        <div class="container">
-            <div class="jumbotron">
-                <h1>WHEELS FOR A WHILE </span>
-                </h1>
-                <br>
-                
+       
             </div>
         </div>
 
-        <div class="container" style="margin-top: -2%; margin-bottom: 2%;">
+        <div class="container" style="margin-top: 1%; margin-bottom: 2%;">
             <div class="col-md-5 col-md-offset-4">
                 <label style="margin-left: 5px;color: red;"><span> <?php echo $error;  ?> </span></label>
                 <div class="panel panel-primary">
-                    <div class="panel-heading"> Login </div>
-                    <div class="panel-body">
+                <div class="panel-heading"> Customer Login </div>
+                    <div class="panel-body" style="padding: 120px;background-image: url('assets/img/CUSTOMER.png');background-size: cover;">
 
                         <form action="" method="POST">
 
                             <div class="row">
                                 <div class="form-group col-xs-12">
-                                    <label for="customer_username"><span style="margin-right: 5px;"></span> Username: </label>
+                                    <label style="color: white; for="customer_username"><span style="margin-right: 5px;"></span> Username: </label>
                                     <div class="input-group">
                                         <input class="form-control" id="customer_username" type="text" name="customer_username">
                                         <span class="input-group-btn">
@@ -81,7 +76,7 @@ header("location: index.php");
 
                             <div class="row">
                                 <div class="form-group col-xs-12">
-                                    <label for="customer_password"><span style="margin-right: 5px;"></span> Password: </label>
+                                    <label style="color: white; for="customer_password"><span style="margin-right: 5px;"></span> Password: </label>
                                     <div class="input-group">
                                         <input class="form-control" id="customer_password" type="password" name="customer_password" >
                                         <span class="input-group-btn">
