@@ -98,15 +98,15 @@ if(!isset($_SESSION['login_customer'])){
             <br><br>
 
             <form method="POST">
-            Mode Of Payment: <select name="subject" id="subject">
+            Mode Of Payment: <select name="subject" id="subject"style="color: black;">
             <option value="Cash" selected="selected" style="color: black;">Cash</option>
-            <option value="Bank Transfer" selected="selected">Bank Transfer</option>
+            <option value="Bank Transfer" selected="selected" style="color: black;">Bank Transfer</option>
             </select>
         </form>
             <br><br>
               
                 Staff: &nbsp;
-                <select name="driver_id_from_dropdown" style="color: black; ng-model="myVar1;>
+                <select name="driver_id_from_dropdown" style="color: black;" ng-model="myVar1;">
                         <?php
                         $sql2 = "SELECT * FROM driver d WHERE d.driver_availability = 'yes' AND d.client_username IN (SELECT cc.client_username FROM clientcars cc WHERE cc.car_id = '$car_id')";
                         $result2 = mysqli_query($conn, $sql2);
