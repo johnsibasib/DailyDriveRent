@@ -172,27 +172,26 @@ if(!isset($_SESSION['login_customer'])){
     <div class="container py-5">
     <div class="row">
 
-    <?php
-        $id = $_GET["id"];
-        $sql4 = "SELECT * FROM poll WHERE id = '$id'";
-        $result4 = $conn->query($sql4);
-
+    <?php 
+        $sql4 = "SELECT * FROM poll";
+        #$result4 = $conn->query($sql4);
+        $result4 = mysqli_query($conn,$sql4);
         if(mysqli_num_rows($result4) > 0)
         {
             while($row = mysqli_fetch_assoc($result4))
             {
-?>
-                <div class="col-md-4" style = "border-style: ridge;">
+?>              
+                <div class="col-md-4" style = "border-style: ridge;margin: 20px;">
                     <div class="card">
                         <div class="card-body">
-                            <h2 class="card-title"> <?php echo $row["feedback"]; ?> </h2>
-                            <h3 class="card-text"> <?php echo $row["name"]; ?> </h3>
-                            <p class="card-text">
+                            <h2 class="card-title" style="color: white;"> <?php echo $row["feedback"]; ?> </h2>
+                            <h3 class="card-text" style="color: white;"> <?php echo $row["name"]; ?> </h3>
+                            <p class="card-text" style="color: white;">
                                 <?php echo $row["suggestions"]; ?>
                             </p>
                         </div>
                     </div>  
-                </div>               
+                </div>              
 <?php
                 
             }
