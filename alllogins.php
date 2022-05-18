@@ -67,7 +67,7 @@
                         <a href="clientlogin.php">Admin</a>
                     </li>
                     <li>
-                        <a href="customerlogin.php">Customer</a>
+                        <a href="login-user.php">Customer</a>
                     </li>
                     <li>
                         <a href="aboutus.php">About Us</a>

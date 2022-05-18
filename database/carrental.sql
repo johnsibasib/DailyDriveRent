@@ -38,7 +38,6 @@ CREATE TABLE `cars` (
   `ac_price_per_day` float NOT NULL,
   `non_ac_price_per_day` float NOT NULL,
   `car_availability` varchar(10) NOT NULL
-  `MOP` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -174,7 +173,6 @@ CREATE TABLE `rentedcars` (
   `no_of_days` int(50) DEFAULT NULL,
   `total_amount` double DEFAULT NULL,
   `return_status` varchar(10) NOT NULL
-  `MOP` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --

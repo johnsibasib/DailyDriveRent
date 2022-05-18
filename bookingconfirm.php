@@ -61,9 +61,19 @@ if(!isset($_SESSION['login_customer'])){
         }
     }
     if($err_date >= 0) { 
-    $sql1 = "INSERT into rentedcars(customer_username,car_id,driver_id,booking_date,rent_start_date,rent_end_date,fare,charge_type,return_status,MOP) 
-    VALUES('" . $customer_username . "','" . $car_id . "','" . $driver_id . "','" . date("Y-m-d") ."','" . $rent_start_date ."','" . $rent_end_date . "','" . $fare . "','" . $charge_type . "','" . $return_status . "','" . $MOP . "')";
-    $result1 = $conn->query($sql1);
+
+    try {
+
+        $sql1 = "INSERT into rentedcars(customer_username,car_id,driver_id,booking_date,rent_start_date,rent_end_date,fare,charge_type,return_status,MOP) 
+        VALUES('" . $customer_username . "','" . $car_id . "','" . $driver_id . "','" . date("Y-m-d") ."','" . $rent_start_date ."','" . $rent_end_date . "','" . $fare . "','" . $charge_type . "','" . $return_status . "','" . $MOP . "')";
+    
+        
+    
+        $result1 = $conn->query($sql1);
+    }  catch(Exception $e) {
+        die($e->getMessage());
+    }
+
 
     $sql2 = "UPDATE cars SET car_availability = 'no' WHERE car_id = '$car_id'";
     $result2 = $conn->query($sql2);
