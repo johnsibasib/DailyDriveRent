@@ -91,17 +91,12 @@ else {
     echo $conn->error;
 }
 ?>
-
-    <br>
-    <br>
-    <br>
-
+<br>
+<br>
     <h2 class="text-center" style="color: white;"> Thank you for visiting! We wish you have a safe ride. </h2>
-
     <div class="container">
     <div class="container" style="margin-bottom: 65px; margin-top:0">
     <div class="col-md-7" style="float: none; margin: 0 auto; border-style: inset; background-image: url('assets/img/confirm1.png'); background-size: cover;">
-      <div class="form-area" style= "padding: 0px;"> </div>
 
         <h5 style="color: black;" class="text-center">Please read the following information about your order.</h5>
                 <br>
@@ -147,11 +142,16 @@ else {
                 <br>
                 <?php } ?>
                 <h4 style="color: white;"> <strong>Total Amount: </strong> ₱<?php echo $total_amount; ?>/-     </h4>
+                <a href="feedbackdes.php">
+                <input value="Next" class="btn btn-success pull-right" >
+                </a>
                 <br>
             </div>
         </div>
+        <br>
         <div class="col-md-12" style="float: none; margin: 0 auto; text-align: center;">
             <h6 style="color: white;">Warning! <strong>Do not reload this page</strong> or the above display will be lost. If you want a hardcopy of this page, please print it now.</h6>
+            
         </div>
     </div>
 
