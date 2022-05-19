@@ -17,7 +17,20 @@ $conn = Connect();
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <!-- Navigation -->
+
+    <!-- !!FOOTER!!-->
+    <link rel="stylesheet" type="text/css" href="assets/css/ourteam2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Web Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  
+</head>
+<body style = "background-color:#090e25; background-size: cover;">
+  <!-- Navigation -->
    
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
         <div class="container">
@@ -41,9 +54,11 @@ $conn = Connect();
 <div>
 <br>
 <br>
-<h1 style="text-align: center; color: white; font-size: 50px;"> What our client said about us.</h1>
-<h5 style="text-align: center; color: white;"> Thank you so much for taking the time to send this! Everyone here at Wheels for a While loves to know that our customers enjoy what we do.</h5>
-<h5 style="text-align: center; color: white;"> We are always trying our best to make your experience memorable, and we're glad that we've achieved it!</h5>
+<h3 style="text-align: center; color: white;"> What our client said about us.</h3>
+<h8 style="text-align: center;margin-left:250px; color: white;"> Thank you so much for taking the time to send this! Everyone here at Wheels for a While loves to know that our customers enjoy what we do.</h8>
+<br>
+<h7 style="text-align: center; color: white;margin-left:375px;"> We are always trying our best to make your experience memorable, and we're glad that we've achieved it!</h7>
+   <br>
    <?php 
         $sql4 = "SELECT * FROM poll";
         #$result4 = $conn->query($sql4);
@@ -74,8 +89,38 @@ $conn = Connect();
         }
 ?>
 </div>
-</head>
-<body style = "background-color:#090e25; background-size: cover;">
 
+<!------footer start--------->
+	<footer class="d-flex p-2">
+		<p>INSIGHTS</p>
+		<p>For more reservation, please click on the link below to contact us.</p> 
+        
+		<div class="social" >
+			<a href="#"><i class="fab fa-facebook-f"onClick="window.open('https://www.facebook.com/TeptechService')" data-bs-toggle="tooltip" data-bs-placement="top" title="@TeptechService"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i  type="button" onClick="copyText()"class="fas fa-envelope-square"  data-bs-toggle="tooltip" data-bs-placement="top" title="insightsofficialweb@gmail.com"></i></a>
+		 </div>
+            <img src="img/footer2.png" width="1150">
+        <div>
+             <img src="img/footer.png" width="1350" height="37">
+        </div>
+        <p hidden><input  type="text" value="insightsofficialweb@gmail.com" id="myInput" style= "display: block;"></p>
+
+        <script>
+            function copyText() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  alert("Text Copied: " + copyText.value);
+}
+        </script>
+    </footer>
 </body>
 </html>

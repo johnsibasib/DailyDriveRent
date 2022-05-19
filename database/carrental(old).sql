@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2022 at 04:39 PM
+-- Generation Time: May 18, 2022 at 03:07 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.0.19
 
@@ -45,18 +45,7 @@ CREATE TABLE `cars` (
 --
 
 INSERT INTO `cars` (`car_id`, `car_name`, `car_nameplate`, `car_img`, `ac_price`, `non_ac_price`, `ac_price_per_day`, `non_ac_price_per_day`, `car_availability`, `MOP`) VALUES
-(19, 'altis', 'ABC 1234', 'assets/img/cars/Altis.png', 200, 100, 3000, 2000, 'yes', ''),
-(20, 'avanza', 'DEF 5678', 'assets/img/cars/Avanza.png', 300, 150, 5000, 3000, 'yes', ''),
-(21, 'alto-800', 'GHI 9101', 'assets/img/cars/alto-800.png', 200, 100, 3000, 2000, 'yes', ''),
-(22, 'dzire', 'JKL 1213', 'assets/img/cars/dzire.png', 300, 150, 5000, 2000, 'yes', ''),
-(23, 'figo', 'MNO 1415', 'assets/img/cars/figo.png', 300, 200, 5000, 3000, 'yes', ''),
-(24, 'fortuner', 'PQR 1617', 'assets/img/cars/Fortuner.png', 500, 300, 5000, 3000, 'yes', ''),
-(25, 'honda BRV', 'STU 1819', 'assets/img/cars/honda brv.png', 500, 300, 5000, 3000, 'yes', ''),
-(26, 'honda CRV', 'VWX 2021', 'assets/img/cars/honda cr v.png', 500, 300, 5000, 2000, 'yes', ''),
-(27, 'hyundai accent', 'ERW 2345', 'assets/img/cars/hyundai accent.png', 500, 100, 1000, 3000, 'yes', ''),
-(28, 'hyundai reina', 'ASD 2344', 'assets/img/cars/hyundai reina.png', 300, 150, 3000, 2000, 'yes', ''),
-(29, 'hyundai veloster', 'FGH 3244', 'assets/img/cars/hyundai veloster.png', 500, 300, 3000, 2000, 'yes', ''),
-(30, 'Innova', 'DFS 4355', 'assets/img/cars/Innova.png', 500, 150, 5000, 3000, 'yes', '');
+(17, 'NISSAN', '123', 'assets/img/cars/Fortuner.png', 20, 50, 10, 100, 'yes', '');
 
 -- --------------------------------------------------------
 
@@ -74,18 +63,7 @@ CREATE TABLE `clientcars` (
 --
 
 INSERT INTO `clientcars` (`car_id`, `client_username`) VALUES
-(19, 'Admin'),
-(20, 'Admin'),
-(21, 'Admin'),
-(22, 'Admin'),
-(23, 'Admin'),
-(24, 'Admin'),
-(25, 'Admin'),
-(26, 'Admin'),
-(27, 'Admin'),
-(28, 'Admin'),
-(29, 'Admin'),
-(30, 'Admin');
+(17, 'Admin');
 
 -- --------------------------------------------------------
 
@@ -153,18 +131,7 @@ CREATE TABLE `driver` (
 --
 
 INSERT INTO `driver` (`driver_id`, `driver_name`, `dl_number`, `driver_phone`, `driver_address`, `driver_gender`, `client_username`, `driver_availability`) VALUES
-(15, 'Rene Serwyn Gimutao', '0000', '+639282308166', 'Bay. Laguna', 'Male', 'Admin', 'yes'),
-(16, 'stephen john', '1111', '+639282302341', 'Sta Cruz, Laguna', 'Male', 'Admin', 'yes'),
-(17, 'Ram Alganes', '2222', '+63928232345', 'Sta Cruz, Laguna', 'Male', 'Admin', 'yes'),
-(18, 'Paul Pabilonia', '3333', '092325537823', 'Pagsanjan, Laguna', 'Male', 'Admin', 'yes'),
-(19, 'Wenn Angelo', '4444', '+639282302341', 'Sta Cruz, Laguna', 'Male', 'Admin', 'yes'),
-(20, 'Jomar Apalat', '6665', '0923278323', 'Lusiana, Laguna', 'Male', 'Admin', 'yes'),
-(21, 'Joben Andaya', '3455', '0923847281', 'Bay. Laguna', 'Male', 'Admin', 'yes'),
-(22, 'Franz Apades', '32452', '+639282302341', 'Sta Cruz, Laguna', 'Male', 'Admin', 'yes'),
-(23, 'Zyra gimutew', '09843', '0923236711', 'Bay. Laguna', 'Male', 'Admin', 'yes'),
-(24, 'Shane Mediya', '2355', '0923726111', 'Sta Cruz, Laguna', 'Female', 'Admin', 'yes'),
-(25, 'Yumi Motrew', '8567', '+639282308166', 'Los banos, Laguna', 'Female', 'Admin', 'yes'),
-(26, 'Karlo Ostia', '5647', '0923726111', 'Bay, Laguna', 'Male', 'Admin', 'yes');
+(14, 'Rene Serwyn Gimutao', '69', '+639282308166', 'Bay. Laguna', 'Male', 'Admin', 'yes');
 
 -- --------------------------------------------------------
 
@@ -200,6 +167,13 @@ CREATE TABLE `poll` (
   `suggestions` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `poll`
+--
+
+INSERT INTO `poll` (`id`, `name`, `email`, `phone`, `feedback`, `suggestions`) VALUES
+(1, 'tep', '', '', 'excellent', 'maganda sya maganda');
+
 -- --------------------------------------------------------
 
 --
@@ -224,6 +198,13 @@ CREATE TABLE `rentedcars` (
   `MOP` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `rentedcars`
+--
+
+INSERT INTO `rentedcars` (`id`, `customer_username`, `car_id`, `driver_id`, `booking_date`, `rent_start_date`, `rent_end_date`, `car_return_date`, `fare`, `charge_type`, `distance`, `no_of_days`, `total_amount`, `return_status`, `MOP`) VALUES
+(574681263, 'John Stephen Reaño Sibasib', 17, 14, '2022-05-18', '2022-05-19', '2022-05-25', '2022-05-18', 100, 'days', NULL, 6, 600, 'R', 'Cash');
+
 -- --------------------------------------------------------
 
 --
@@ -237,6 +218,13 @@ CREATE TABLE `usertable` (
   `status` text NOT NULL,
   `name` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `usertable`
+--
+
+INSERT INTO `usertable` (`email`, `password`, `code`, `status`, `name`) VALUES
+('johnsibasib@gmail.com', '$2y$10$I4yGOIcZL/GFS2TNGXhwPOl9lwChYF3J6PMk6rNEpYfu..JE.0p9a', 0, 'verified', 'John Stephen Reaño Sibasib');
 
 --
 -- Indexes for dumped tables
@@ -305,25 +293,25 @@ ALTER TABLE `usertable`
 -- AUTO_INCREMENT for table `cars`
 --
 ALTER TABLE `cars`
-  MODIFY `car_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `car_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `driver`
 --
 ALTER TABLE `driver`
-  MODIFY `driver_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `driver_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `poll`
 --
 ALTER TABLE `poll`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `rentedcars`
 --
 ALTER TABLE `rentedcars`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=574681266;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=574681264;
 
 --
 -- Constraints for dumped tables

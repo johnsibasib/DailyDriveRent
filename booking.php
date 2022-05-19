@@ -93,14 +93,15 @@ if(!isset($_SESSION['login_customer'])){
         </div>
 
          <h5 style="color: white;"> Choose charge type:  &nbsp;
-            <input onclick="reveal()" type="radio" name="radio1" value="km"> per km(s) &nbsp;
             <input onclick="reveal()" type="radio" name="radio1" value="days"> per day(s)
             <br><br>
 
             <form method="POST">
             Mode Of Payment: <select name="subject" id="subject"style="color: black;">
+            
             <option value="Cash" selected="selected" style="color: black;">Cash</option>
             <option value="Bank Transfer" selected="selected" style="color: black;">Bank Transfer</option>
+            <option value="Cash" selected="selected" style="color: black;">     </option>
             </select>
         </form>
             <br><br>

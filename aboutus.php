@@ -26,7 +26,9 @@
 
 <body>
 	<!----insights Section start---->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation"style="color:white;">
+	<div class="insights" style="background-image: url('img/background.png');">
+            
         <div class="container"><!--KULAY NG MISMONG NAV BAR-->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" style="background-color: grey;border: transparent;background-image: url('assets/img/menubar.png');background-size: cover;" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -34,14 +36,24 @@
                 <a class="navbar-brand page-scroll" href="index.php">
                    WHEELS FOR A WHILE </a>
             </div>
-          
-
-            <?php include 'alllogins.php'; ?>
+            <li>
+                        <a href="index.php" style="color:white;">Home</a>
+                    </li>
+                    <li>
+                        <a href="clientlogin.php" style="color:white;">Admin</a>
+                    </li>
+                    <li >
+                        <a href="login-user.php"style="color:white;">Customer</a>
+                    </li>
+                    <li >
+                        <a href="aboutus.php"style="color:white;">About Us</a>
+                    </li>
+                    <li>
+                        <a href="feedbacknicustomer.php" style="color:white;">Feedbacks</a>
+                    </li>
             
                   
         </div>
-	<div class="insights" style="background-image: url('img/background.png');">
-		<nav>
 			<h2 class="logo">ABOUT US<span></span></h2>
 	</div>
 		</nav>
@@ -111,17 +123,17 @@
         <div class="d-flex flex-column text-center mb-5">
             
             <h1 class="display-4 m-0"> THE PEOPLE <span class="text-primary"> BEHIND </span></h1>
-            <h6>We believe on working together, being positive anf inspiring each other that keep 
+            <h6>We believe on working together, being positive and inspiring each other that keep 
                 us on the cutting edge of technology and well positioned to deliver value to our clients.</h6>
         </div>
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="team card position-relative overflow-hidden border-0 mb-4">
-                    <img class="card-img-top" src="img/team-1.jpg" alt="">
+                    <img class="card-img-top" src="img/Tep.png" alt="">
                     <div class="card-body text-center p-0">
                         <div class="team-text d-flex flex-column justify-content-center bg-light">
                             <h5> John Stephen Sibasib</h5>
-                            <i>DEVELOPER</i>
+                            <i>MAIN PROGRAMMER</i>
                         </div>
                         <div class="team-social d-flex align-items-center justify-content-center bg-dark">
                             <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" onClick="window.open('https://twitter.com/akositepp')" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
@@ -133,11 +145,11 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="team card position-relative overflow-hidden border-0 mb-4">
-                    <img class="card-img-top" src="img/team-2.jpg" alt="">
+                    <img class="card-img-top" src="img/Karla.png" alt="">
                     <div class="card-body text-center p-0">
                         <div class="team-text d-flex flex-column justify-content-center bg-light">
                             <h5>Karla Ostia</h5>
-                            <i>DEVELOPER</i>
+                            <i>ASSISTANT PROGRAMMER</i>
                         </div>
                         <div class="team-social d-flex align-items-center justify-content-center bg-dark">
                             <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" onClick="window.open('https://twitter.com/karlaaamarie')" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
@@ -149,11 +161,11 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="team card position-relative overflow-hidden border-0 mb-4">
-                    <img class="card-img-top" src="img/Rene.jpg" alt="">
+                    <img class="card-img-top" src="img/Wyn.png" alt="">
                     <div class="card-body text-center p-0">
                         <div class="team-text d-flex flex-column justify-content-center bg-light">
                             <h5>Rene Serwyn Guimutao</h5>
-                            <i>DEVELOPER</i>
+                            <i>BACK-END DEVELOPER</i>
                         </div>
                         <div class="team-social d-flex align-items-center justify-content-center bg-dark">
                             <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" onClick="window.open('https://twitter.com/ReneSerwyn')"style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
@@ -165,11 +177,11 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="team card position-relative overflow-hidden border-0 mb-4">
-                    <img class="card-img-top" src="img/franz.jpg" alt="">
+                    <img class="card-img-top" src="img/franzz.png" alt="">
                     <div class="card-body text-center p-0">
                         <div class="team-text d-flex flex-column justify-content-center bg-light">
                             <h5>Franz Desiderio</h5>
-                            <i>DEVELOPER</i>
+                            <i>BACK-END DEVELOPER</i>
                         </div>
                         <div class="team-social d-flex align-items-center justify-content-center bg-dark">
                             <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" onClick="window.open('https://twitter.com/_franzdesiderio')" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
@@ -186,11 +198,11 @@
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="team card position-relative overflow-hidden border-0 mb-4">
-                    <img class="card-img-top" src="img/team-1.jpg" alt="">
+                    <img class="card-img-top" src="img/Zyra.png" alt="">
                     <div class="card-body text-center p-0">
                         <div class="team-text d-flex flex-column justify-content-center bg-light">
                             <h5>Zyra Ramos</h5>
-                            <i>DEVELOPER</i>
+                            <i>FRONT-END DEVELOPER</i>
                         </div>
                         <div class="team-social d-flex align-items-center justify-content-center bg-dark">
                             <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" onClick="window.open('https://twitter.com/zyrarms')"style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
@@ -202,11 +214,11 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="team card position-relative overflow-hidden border-0 mb-4">
-                    <img class="card-img-top" src="img/team-2.jpg" alt="">
+                    <img class="card-img-top" src="img/Yumi.png" alt="">
                     <div class="card-body text-center p-0">
                         <div class="team-text d-flex flex-column justify-content-center bg-light">
                             <h5> Yumi Moldes</h5>
-                            <i>DEVELOPER</i>
+                            <i>FRONT-END DEVELOPER</i>
                         </div>
                         <div class="team-social d-flex align-items-center justify-content-center bg-dark">
                             <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" onClick="window.open('https://twitter.com/justyumii')"style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
@@ -218,11 +230,11 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="team card position-relative overflow-hidden border-0 mb-4">
-                    <img class="card-img-top" src="img/team-3.jpg" alt="">
+                    <img class="card-img-top" src="img/Ellaa.png" alt="">
                     <div class="card-body text-center p-0">
                         <div class="team-text d-flex flex-column justify-content-center bg-light">
                             <h5>Ella Jane Espiritu</h5>
-                            <i>DEVELOPER</i>
+                            <i>UI/UX  DEVELOPER</i>
                         </div>
                         <div class="team-social d-flex align-items-center justify-content-center bg-dark">
                             <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" onClick="window.open('https://twitter.com/janeellaqt')"style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
