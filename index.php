@@ -107,7 +107,7 @@ $conn = Connect();
         </section>
                     
     </div>
-        <div style="color:#ddd;background-image: url('assets/img/bgg.png');background-size: cover;padding:170px 150px;">
+       
             
         </div>
 <!------footer start--------->
