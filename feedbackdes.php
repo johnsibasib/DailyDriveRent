@@ -23,22 +23,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
     <link rel="stylesheet" href="assets/css/clientlogin.css">
 
 </head>
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container"><!--KULAY NG MISMONG NAV BAR-->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" style="background-color: grey;border: transparent;background-image: url('assets/img/menubar.png');background-size: cover;" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    </button>
-                <a class="navbar-brand page-scroll" href="index.php">
-                   WHEELS FOR A WHILE </a>
-            </div>
-          
-
-            <?php include 'alllogins.php'; ?>
-            
-                  
-        </div>
-      
-    </nav>
 <body class="agileits_w3layouts">
     <h1 class="agile_head text-center">Feedback Form</h1>
     <div class="w3layouts_main wrap">

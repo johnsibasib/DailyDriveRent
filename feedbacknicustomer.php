@@ -18,6 +18,7 @@ $conn = Connect();
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <!-- Navigation -->
+   
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
         <div class="container">
             <div class="navbar-header">
@@ -38,7 +39,12 @@ $conn = Connect();
 <br>
 <br>
 <div>
-    <?php 
+<br>
+<br>
+<h1 style="text-align: center; color: white; font-size: 50px;"> What our client said about us.</h1>
+<h5 style="text-align: center; color: white;"> Thank you so much for taking the time to send this! Everyone here at Wheels for a While loves to know that our customers enjoy what we do.</h5>
+<h5 style="text-align: center; color: white;"> We are always trying our best to make your experience memorable, and we're glad that we've achieved it!</h5>
+   <?php 
         $sql4 = "SELECT * FROM poll";
         #$result4 = $conn->query($sql4);
         $result4 = mysqli_query($conn,$sql4);
@@ -47,13 +53,13 @@ $conn = Connect();
             while($row = mysqli_fetch_assoc($result4))
             {
 ?>              
-                <div class="col-md-4" style = "border-style: ridge;margin: 20px;">
+                <div class=" d-flex justify-content-center col-md-3" style = "border-style: ridge; border-color: #09013D;  margin: 20px; margin-left: 80px; border-radius:30px; background: rgb(228, 227, 227, 0.40);">
                     <div class="card">
                         <div class="card-body">
-                            <h2 class="card-title" style="color: black;"> <?php echo $row["feedback"]; ?> </h2>
-                            <h3 class="card-text" style="color: black;"> <?php echo $row["name"]; ?> </h3>
-                            <p class="card-text" style="color: black;">
-                                <?php echo $row["suggestions"]; ?>
+                            <h3 class="card-title" style="color: black; text-align: center"> <?php echo $row["feedback"]; ?> </h3>
+                            <h2 class="card-text" style="color: black; text-align: center"> " <?php echo $row["suggestions"]; ?> " </h2>
+                            <p class="card-text" style="color: black;text-align: right">-
+                                <?php echo $row["name"]; ?>
                             </p>
                         </div>
                     </div>  
@@ -64,12 +70,12 @@ $conn = Connect();
         }
         else
         {
-            echo"No Faculty Found";
+            echo"No Faculty Found"; 
         }
 ?>
 </div>
 </head>
-<body>
-    
+<body style = "background-color:#090e25; background-size: cover;">
+
 </body>
 </html>

@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 html,body{
-    background: #6665ee;
+    padding-top: 50px;
+    background-color: #09013D;
+    background-size: 100%;
     font-family: 'Poppins', sans-serif;
 }
 ::selection{
     color: #fff;
-    background: #6665ee;
+    background: url("../../assets/img/BG2.png");
+    background: #09013D;
 }
 .container{
     position: absolute;
@@ -14,14 +17,12 @@ html,body{
     transform: translate(-50%, -50%);
 }
 .container .form{
-    background: #fff;
-    padding: 30px 35px;
+    background: url("assets/img/CUSTOMER.png");
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .container .form form .form-control{
-    height: 40px;
-    font-size: 15px;
+    height: 50px;
+    font-size: 20px;
 }
 .container .form form .forget-pass{
     margin: -15px 0 15px 0;

@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style2.css">
 </head>
-<body>
+<body style="background-color: #09013D">
+
     <div class="container">
         <div class="row">
             <div class="col-md-4 offset-md-4 form login-form">
+            <div class="panel-body" style="background-image: url('assets/img/CUSTOMER.png');background-size: cover;">
                 <form action="login-user.php" method="POST" autocomplete="">
-                    <h2 class="text-center">Login Form</h2>
+                    <p></p>
+                    <H2 class="text-center">Login Form</h2>   
                     <p class="text-center">Login with your email and password.</p>
                     <?php
                     if(count($errors) > 0){
