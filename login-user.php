@@ -66,7 +66,7 @@
                     <div class="form-group">
                         <input class="form-control button" type="submit" name="login" value="Login">
                     </div>
-                    <div class="link login-link text-center">dont have account? <a href="signup-user.php">create account</a></div>
+                    <div class="link login-link text-center" style="color:#6665ee;">dont have account? <a href="signup-user.php"style="text-decoration: underline;">create account</a></div>
                 </form>
             </div>
         </div>

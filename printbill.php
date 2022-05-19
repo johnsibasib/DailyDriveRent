@@ -98,11 +98,8 @@ else {
     <div class="container" style="margin-bottom: 65px; margin-top:0">
     <div class="col-md-7" style="float: none; margin: 0 auto; border-style: inset; background-image: url('assets/img/confirm1.png'); background-size: cover;">
 
-        <h5 style="color: black;" class="text-center">Please read the following information about your order.</h5>
-                <br>
-                <h4 style="color: black;">Please make a note of your <strong>order number</strong> now and keep in the event you need to communicate with us about your order.</h4>
-                <br>
-                <h3 style="color: black;">Details</h3>
+        <h4 style="color: black;" class="text-center">Please read the following information about your order.</h4>
+                <h3 style="color: black;">Details:</h3>
                 <br>
 
             <div class="col-md-10" style="float: none; margin: 0 auto; ">
