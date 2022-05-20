@@ -55,9 +55,8 @@ $conn = Connect();
 <br>
 <br>
 <h3 style="text-align: center; color: white;"> What our client said about us.</h3>
-<h8 style="text-align: center;margin-left:250px; color: white;"> Thank you so much for taking the time to send this! Everyone here at Wheels for a While loves to know that our customers enjoy what we do.</h8>
-<br>
-<h7 style="text-align: center; color: white;margin-left:375px;"> We are always trying our best to make your experience memorable, and we're glad that we've achieved it!</h7>
+<p style="text-align: center; color: white;"> Thank you so much for taking the time to send this! Everyone here at Wheels for a While loves to know that our customers enjoy what we do.</p>
+<p style="text-align: center; color: white;"> We are always trying our best to make your experience memorable, and we're glad that we've achieved it!</p>
    <br>
    <?php 
         $sql4 = "SELECT * FROM poll";

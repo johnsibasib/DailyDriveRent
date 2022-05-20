@@ -193,9 +193,9 @@
             </div>
         </div>
     </div>
-    <div class="container" style="margin-left: 250px;">
+    <div class="container">
 
-        <div class="row">
+        <div class="row d-flex justify-content-center">
             <div class="col-lg-3 col-md-6">
                 <div class="team card position-relative overflow-hidden border-0 mb-4">
                     <img class="card-img-top" src="img/Zyra.png" alt="">
