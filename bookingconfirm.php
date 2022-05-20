@@ -10,6 +10,7 @@ if(!isset($_SESSION['login_customer'])){
 ?>
 
 <head>
+    <link rel="shortcut icon" type="image/png" href="assets/img/_Logo1000.png">
 <script type="text/javascript" src="assets/ajs/angular.min.js"> </script>
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 

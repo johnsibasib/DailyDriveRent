@@ -15,7 +15,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
 <!-- //custom-theme -->
 <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-<link rel="shortcut icon" type="image/png" href="assets/img/P.png.png">
+<link rel="shortcut icon" type="image/png" href="assets/img/_Logo1000.png">
    
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>

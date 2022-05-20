@@ -11,7 +11,7 @@ if(isset($_SESSION['login_client'])){
 
     <head>
         <title> WHEELS FOR A WHILE </title>
-        <link rel="shortcut icon" type="image/png" href="assets/img/P.png.png">
+        <link rel="shortcut icon" type="image/png" href="assets/img/_Logo1000.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Elegant Feedback Form  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />

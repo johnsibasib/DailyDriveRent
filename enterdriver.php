@@ -6,7 +6,7 @@
 <?php 
 include('session_client.php'); ?>
 <head>
-<link rel="shortcut icon" type="image/png" href="assets/img/P.png.png">
+<link rel="shortcut icon" type="image/png" href="assets/img/_Logo1000.png">
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/customerlogin.css">

@@ -8,6 +8,7 @@ if(!isset($_SESSION['login_customer'])){
 }
 ?> 
 <title>Booking</title>
+<link rel="shortcut icon" type="image/png" href="assets/img/_Logo1000.png">
 <head>
     <script type="text/javascript" src="assets/ajs/angular.min.js"> </script>
     

@@ -12,7 +12,7 @@ $conn = Connect();
 <meta name="keywords" content="Elegant Feedback Form  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <link rel="shortcut icon" type="image/png" href="assets/img/icon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/img/_Logo1000.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="assets/css/user.css">
