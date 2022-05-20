@@ -4,7 +4,7 @@
  include('session_customer.php');
 if(!isset($_SESSION['login_customer'])){
     session_destroy();
-    header("location: customerlogin.php");
+    header("location: login-user.php");
 }
 ?> 
 <title>Booking</title>
