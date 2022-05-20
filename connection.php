@@ -2,9 +2,9 @@
 
 function Connect()
 {
-	$dbhost = "localhost";
-	$dbuser = "root";
-	$dbpass = "";
+	$dbhost = "carrental.cg8zzvcrxjor.ap-southeast-1.rds.amazonaws.com";
+	$dbuser = "admin";
+	$dbpass = "Serwynstephen0987";
 	$dbname = "carrental";
 
 	//Create Connection
