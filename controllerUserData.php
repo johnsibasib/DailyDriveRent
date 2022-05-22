@@ -5,6 +5,35 @@ $email = "";
 $name = "";
 $errors = array();
 
+// EMAIL
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/Exception.php';
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/SMTP.php';
+
+$mail = new PHPMailer;
+
+$mail->isSMTP();                      // Set mailer to use SMTP
+$mail->Host = 'smtp.gmail.com';       // Specify main and backup SMTP servers
+$mail->SMTPAuth = true;               // Enable SMTP authentication
+$mail->Username = 'insightsofficialweb@gmail.com';   // SMTP username
+$mail->Password = 'insights1081';   // SMTP password
+$mail->SMTPSecure = 'tls';            // Enable TLS encryption, ssl also accepted
+$mail->Port = 587;                    // TCP port to connect to
+
+// Sender info
+$mail->setFrom('insightsofficialweb@gmail.com', 'insights officialweb');
+$mail->addReplyTo('addReplyToEmail@gmail.com', 'ReplyName');
+
+
+
+// Set email format to HTML
+$mail->isHTML(true);
+
+
+
 //if user signup button
 if(isset($_POST['signup'])){
     $name = mysqli_real_escape_string($con, $_POST['name']);
@@ -30,16 +59,25 @@ if(isset($_POST['signup'])){
             $subject = "Email Verification Code";
             $message = "Your verification code is $code";
             $sender = "From: shahiprem7890@gmail.com";
-            if(mail($email, $subject, $message, $sender)){
+
+            $mail->addAddress ($email);
+            $mail->Subject = $subject;
+            $mail->Body = $message;
+            if(!$mail->send()) { 
+                echo 'Message could not be sent. Mailer Error: '.$mail->ErrorInfo; 
+                var_dump($mail);
+                
+            } else { 
+
                 $info = "We've sent a verification code to your email - $email";
                 $_SESSION['info'] = $info;
                 $_SESSION['email'] = $email;
                 $_SESSION['password'] = $password;
                 header('location: user-otp.php');
                 exit();
-            }else{
-                $errors['otp-error'] = "Failed while sending code!";
-            }
+            } 
+
+
         }else{
             $errors['db-error'] = "Failed while inserting data into database!";
         }
