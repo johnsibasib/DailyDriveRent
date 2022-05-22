@@ -30,16 +30,23 @@ if(isset($_POST['signup'])){
             $subject = "Email Verification Code";
             $message = "Your verification code is $code";
             $sender = "From: shahiprem7890@gmail.com";
-            if(mail($email, $subject, $message, $sender)){
+
+            try {
+                mail($email, $subject, $message, $sender)
                 $info = "We've sent a verification code to your email - $email";
                 $_SESSION['info'] = $info;
                 $_SESSION['email'] = $email;
                 $_SESSION['password'] = $password;
                 header('location: user-otp.php');
                 exit();
-            }else{
-                $errors['otp-error'] = "Failed while sending code!";
+            } catch(Exception $e) {
+                $errors['otp-error'] = $e->getMessage();
             }
+
+            // if(){
+               
+            // }else{
+            // }
         }else{
             $errors['db-error'] = "Failed while inserting data into database!";
         }
