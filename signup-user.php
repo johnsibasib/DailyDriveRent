@@ -6,6 +6,7 @@
     <title>Signup Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" type="image/png" href="assets/img/_Logo1000.png">
 </head>
 <body>
     <div class="container">
