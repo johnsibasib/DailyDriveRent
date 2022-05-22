@@ -61,11 +61,11 @@
                     <div class="form-group">
                         <input class="form-control" type="password" name="password" placeholder="Password" required>
                     </div>
-                    <div class="link forget-pass text-left"><a href="forgot-password.php">Forgot password?</a></div>
+                    <div class="link forget-pass text-left" ><a href="forgot-password.php" style="color: white;text-decoration: underline;">Forgot password?</a></div>
                     <div class="form-group">
                         <input class="form-control button" type="submit" name="login" value="Login">
                     </div>
-                    <div class="link login-link text-center" style="color:#6665ee;">dont have account? <a href="signup-user.php"style="text-decoration: underline;">create account</a></div>
+                    <div class="link login-link text-center" style="color: white;">dont have account? <a href="signup-user.php"style="color: white;text-decoration: underline;">create account</a></div>
                 </form>
             </div>
         </div>
