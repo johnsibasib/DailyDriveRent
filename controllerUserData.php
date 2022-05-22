@@ -155,17 +155,22 @@ if(isset($_POST['signup'])){
                 $subject = "Password Reset Code";
                 $message = "Your password reset code is $code";
                 $sender = "From: shahiprem7890@gmail.com";
-                if(mail($email, $subject, $message, $sender)){
+
+                $mail->addAddress ($email);
+                $mail->Subject = $subject;
+                $mail->Body = $message;
+                if(!$mail->send()) { 
+                    echo 'Message could not be sent. Mailer Error: '.$mail->ErrorInfo; 
+                    var_dump($mail);
+                    
+                } else { 
+    
                     $info = "We've sent a passwrod reset otp to your email - $email";
                     $_SESSION['info'] = $info;
                     $_SESSION['email'] = $email;
                     header('location: reset-code.php');
-                    exit();
-                }else{
-                    $errors['otp-error'] = "Failed while sending code!";
-                }
-            }else{
-                $errors['db-error'] = "Something went wrong!";
+                    exit();;
+                } 
             }
         }else{
             $errors['email'] = "This email address does not exist!";
