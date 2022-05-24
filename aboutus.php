@@ -259,7 +259,7 @@
 		<p>For more reservation, please click on the link below to contact us.</p> 
         
 		<div class="social" >
-			<a href="#"><i class="fab fa-facebook-f"onClick="window.open('https://www.facebook.com/TeptechService')" data-bs-toggle="tooltip" data-bs-placement="top" title="@TeptechService"></i></a>
+			<a href="#"><i class="fab fa-facebook-f"onClick="window.open('https://www.facebook.com/wheelsforawhileservices')" data-bs-toggle="tooltip" data-bs-placement="top" title="@TeptechService"></i></a>
 			<a href="#"><i class="fab fa-instagram"></i></a>
 			<a href="#"><i  type="button" onClick="copyText()"class="fas fa-envelope-square"  data-bs-toggle="tooltip" data-bs-placement="top" title="insightsofficialweb@gmail.com"></i></a>
 		 </div>
