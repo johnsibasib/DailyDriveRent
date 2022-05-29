@@ -7,7 +7,7 @@ if(!isset($_SESSION['login_customer'])){
     header("location: login-user.php");
 }
 ?> 
-<title>Booking</title>
+<title>WHEELS FOR A WHILE</title>
 <link rel="shortcut icon" type="image/png" href="assets/img/_Logo1000.png">
 <head>
     <script type="text/javascript" src="assets/ajs/angular.min.js"> </script>

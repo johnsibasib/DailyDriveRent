@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Portfolio website</title>
+	<title>WHEELS FOR A WHILE</title>
     <link rel="shortcut icon" type="image/png" href="assets/img/_Logo1000.png">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">

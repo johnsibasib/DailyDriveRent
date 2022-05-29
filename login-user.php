@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login Form</title>
+    <title>WHEELS FOR A WHILE</title>
     <link rel="shortcut icon" type="image/png" href="assets/img/_Logo1000.png">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="assets/css/user.css">

@@ -1,7 +1,7 @@
 <html>
 
   <head>
-    <title> customer Signup | WHEELS FOR A WHILE </title>
+    <title>WHEELS FOR A WHILE</title>
   </head>
   <link rel="shortcut icon" type="image/png" href="assets/img/P.png.png">
   <link rel="stylesheet" type = "text/css" href ="assets/css/manager_registered_success.css">

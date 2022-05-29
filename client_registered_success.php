@@ -1,7 +1,7 @@
 <html>
 
   <head>
-    <title></title>
+    <title>WHEELS FOR A WHILE</title>
     <link rel="shortcut icon" type="image/png" href="assets/img/P.png.png">
     <link rel="stylesheet" type = "text/css" href ="assets/bootstrap/css/bootstrap.min.css">
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>

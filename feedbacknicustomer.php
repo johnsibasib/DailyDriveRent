@@ -9,7 +9,7 @@ $conn = Connect();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WHEELS FOR A WHILE</title>
     <link rel="stylesheet" href="assets/css/user.css">
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="assets/img/_Logo1000.png">
