@@ -101,8 +101,6 @@ if(!isset($_SESSION['login_customer'])){
             Mode Of Payment: <select name="subject" id="subject"style="color: black;">
             
             <option value="Cash" selected="selected" style="color: black;">Cash</option>
-            <option value="Bank Transfer" selected="selected" style="color: black;">Bank Transfer</option>
-            <option value="Cash" selected="selected" style="color: black;">     </option>
             </select>
         </form>
             <br><br>
