@@ -5,13 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Contact Form</title>
+    <title>WHEELS FOR A WHILE</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/_Logo1000.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 <!-- Customized Bootstrap Stylesheet -->
 <link href="assets/css/ourteam.css" rel="stylesheet">
   </head>
