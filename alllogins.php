@@ -7,7 +7,7 @@
                         <a href="index.php">Home</a>
                     </li>
                     <li>
-                        <a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['login_client']; ?></a>
+                        <a href="#"><span class="glyphicon glyphicon-user"></span>Welcome <?php echo $_SESSION['login_client']; ?></a>
                     </li>
                     
                     <ul class="nav navbar-nav ">
@@ -40,7 +40,7 @@
                         <a href="index.php">Home</a>
                     </li>
                     <li>
-                        <a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['login_customer']; ?></a>
+                        <a href="#"><span class="glyphicon glyphicon-user"></span>Welcome <?php echo $_SESSION['login_customer']; ?></a>
                     </li>
                    
                     <ul class="nav navbar-nav">
@@ -48,11 +48,13 @@
                 <ul class="dropdown-menu">
               <li> <a href="prereturncar.php">Return Now</a></li>
               <li> <a href="mybookings.php"> My Bookings</a></li>
+              
             </ul>
             </li>
           </ul>
                     <li>
-                        <a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+                        <a href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
+                        <li> <a href="contactus.php">Contact Us</a></li>
                     </li>
                 </ul>
             </div>
