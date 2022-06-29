@@ -18,8 +18,8 @@
         $mail->isSMTP();                      // Set mailer to use SMTP
         $mail->Host = 'smtp.gmail.com';       // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;               // Enable SMTP authentication
-        $mail->Username = 'kssthesisgroup@gmail.com';   // SMTP username
-        $mail->Password = 'bhgwyjpusounzucw';   // SMTP password
+        $mail->Username = 'insightsteam22@gmail.com';   // SMTP username
+        $mail->Password = 'fyqimgzevcoplqnp';   // SMTP password
         $mail->SMTPSecure = 'tls';            // Enable TLS encryption, ssl also accepted
         $mail->Port = 587;                    // TCP port to connect to
 
@@ -41,10 +41,7 @@
             
         }
          else {
-            $status = "success";
-            $response = "Email is sent!";
+            echo "<script>alert('Your Message Has Been succesfully sent to our INSIGHTS support team');window.location.href='index.php';</script>";
         }
-
-        exit(json_encode(array("status" => $status, "response" => $response)));
     }
 ?>

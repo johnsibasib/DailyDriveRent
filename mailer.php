@@ -38,9 +38,8 @@ if(isset($_POST['submit'])){
       var_dump($mail);
       
   } else { 
-      $alert = '<div class="alert-success">
-                 <span>Message Sent! Thank you for contacting us.</span>
-                </div>';
+    echo "<script>alert('Email has been sent')</script>"
+    header('Location: index.php');
   } 
     
   } catch (Exception $e){
