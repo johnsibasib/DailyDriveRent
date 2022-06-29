@@ -1,4 +1,4 @@
-<?php include 'sendemail.php'; ?>
+<?php include 'mailer.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
