@@ -19,12 +19,12 @@ if(isset($_POST['submit'])){
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'insightsofficialweb@gmail.com'; // Gmail address which you want to use as SMTP server
-    $mail->Password = 'jtnkmpyxwjwhzqdd'; // Gmail address Password
+    $mail->Username = 'kssthesisgroup@gmail.com'; // Gmail address which you want to use as SMTP server
+    $mail->Password = 'bhgwyjpusounzucw'; // Gmail address Password
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
-    $mail->setFrom('insightsofficialweb@gmail.com', 'insights officialweb'); // Gmail address which you used as SMTP server
+    $mail->setFrom('kssthesisgroup@gmail.com'); // Gmail address which you used as SMTP server
     $mail->addAddress($email); // Email address where you want to receive emails (you can use any of your gmail address including the gmail address which you used as SMTP server)
     $mail->addAddress('insightsofficialweb@gmail.com');
 
