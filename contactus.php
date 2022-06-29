@@ -1,4 +1,4 @@
-<?php include 'mailer.php'; ?>
+<?php include 'sendEmail.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -39,10 +39,6 @@
        
 </nav>
   <body>
-  
-    <!--alert messages start-->
-    <?php echo $alert; ?>
-    <!--alert messages end-->
 
     <!--contact section start-->
     <div class="contact-section" style="margin-top: 200px;">

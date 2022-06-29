@@ -6,11 +6,10 @@
         require 'PHPMailer/PHPMailer.php';
         require 'PHPMailer/SMTP.php';
 
-    if (isset($_POST['name']) && isset($_POST['email'])) {
+    if (isset($_POST['submit']) && isset($_POST['email'])) {
         $name = $_POST['name'];
         $email = $_POST['email'];
-        $subject = $_POST['subject'];
-        $body = $_POST['body'];
+        $message = $_POST['message'];
 
        
         $mail = new PHPMailer();
@@ -27,11 +26,12 @@
         //Email Settings
         $mail->isHTML(true);
      
-        $subject = "THANKYOU FOR CONTACTING US!";
-        $message = "TRYYYYYYY";
+        $subject = "INSIGHTS Customer Support | WE RECEIVED YOUR MESSAGE";
+        $message = "<h2><center>Your message request has been sent to the customer support team at INSIGHTS Company. <br>You will be notified via email to: <br><br>$email <br><br>If you did not try to reach INSIGHTS Support Simply disregard and delete this email. <br>Probably someone typed their email address improperly.</h2>  <h2><br>Message Details:</h2><h3>Name : $name <br>Email: $email <br>Message : $message</h3>";
         $sender = "From: shahiprem7890@gmail.com";
 
         $mail->addAddress ($email);
+        $mail->addAddress ('insightsofficialweb@gmail.com');
         $mail->Subject = $subject;
         $mail->Body = $message;
 
@@ -41,7 +41,7 @@
             
         }
          else {
-             $status = "success";
+            $status = "success";
             $response = "Email is sent!";
         }
 

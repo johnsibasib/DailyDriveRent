@@ -52,9 +52,6 @@
                     <li>
                         <a href="feedbacknicustomer.php" style="color:white;">Feedbacks</a>
                     </li>
-                    <li>
-                        <a href="contactus.php" style="color:white;">Contact Us</a>
-                    </li>
             
                   
         </div>
